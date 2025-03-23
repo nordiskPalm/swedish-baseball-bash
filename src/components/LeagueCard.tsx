@@ -15,6 +15,7 @@ interface LeagueCardProps {
   isPrivate: boolean;
   isJoined?: boolean;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 const LeagueCard: React.FC<LeagueCardProps> = ({
@@ -28,6 +29,7 @@ const LeagueCard: React.FC<LeagueCardProps> = ({
   isPrivate,
   isJoined = false,
   className,
+  style,
 }) => {
   return (
     <div 
@@ -35,6 +37,7 @@ const LeagueCard: React.FC<LeagueCardProps> = ({
         "glass-card rounded-xl overflow-hidden transition-all duration-300 hover:shadow-md group animate-scale-in",
         className
       )}
+      style={style}
     >
       <div className="p-6">
         <div className="flex justify-between items-start mb-3">
