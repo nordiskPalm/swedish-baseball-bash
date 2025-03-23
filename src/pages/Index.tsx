@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Trophy, Users, Check } from 'lucide-react';
@@ -34,17 +33,17 @@ const Index = () => {
     {
       icon: <Calendar className="h-6 w-6 text-primary" />,
       title: 'Customizable Schedule',
-      description: 'Set your own draft dates and season duration to fit your league's needs.'
+      description: "Set your own draft dates and season duration to fit your league's needs."
     },
     {
       icon: <Users className="h-6 w-6 text-primary" />,
       title: 'Invite Friends',
-      description: 'Create private leagues and invite friends with a custom link or password protection.'
+      description: "Create private leagues and invite friends with a custom link or password protection."
     },
     {
       icon: <Trophy className="h-6 w-6 text-primary" />,
       title: 'Detailed Statistics',
-      description: 'Track weekly and season-long performance with comprehensive player statistics.'
+      description: "Track weekly and season-long performance with comprehensive player statistics."
     },
   ];
 
